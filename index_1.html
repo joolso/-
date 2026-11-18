@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing page</title>
+  <style>
+    :root {
+      --stroke-gray-soft: #dde1e6;
+      --shadow-card: 0 12px 40px 0 rgba(18, 23, 38, 0.1);
+      --radius-card: 16px;
+      --card-width: 975.9957244267862px;
+      --card-height: 1296.873746315192px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: #f2f4f8;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      padding: 48px 24px;
+    }
+
+    /* Figma node 3384:1914 — "Landing page" */
+    .landing-page {
+      position: relative;
+      width: var(--card-width);
+      max-width: 100%;
+      aspect-ratio: 975.9957244267862 / 1296.873746315192;
+      overflow: clip;
+      border: 1px solid var(--stroke-gray-soft);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+      background: #fff;
+    }
+
+    .landing-page__image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      object-fit: cover;
+      pointer-events: none;
+      border-radius: var(--radius-card);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="landing-page" data-node-id="3384:1914" data-name="Landing page">
+      <img class="landing-page__image" src="assets/landing-page.png" alt="">
+    </div>
+  </main>
+</body>
+</html>
